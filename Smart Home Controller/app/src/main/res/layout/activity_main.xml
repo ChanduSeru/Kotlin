@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Light Control -->
+    <TextView
+        android:id="@+id/light_label"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Light Control"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/light_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/light_label"
+        android:layout_centerHorizontal="true"
+        android:text="Turn Light On/Off"
+        android:padding="16dp" />
+
+    <!-- Thermostat Control -->
+    <TextView
+        android:id="@+id/thermostat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thermostat Control"
+        android:textSize="20sp"
+        android:layout_below="@id/light_switch"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp" />
+
+    <SeekBar
+        android:id="@+id/thermostat_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thermostat_label"
+        android:layout_margin="16dp"
+        android:max="30"
+        android:progress="22" />
+
+    <TextView
+        android:id="@+id/thermostat_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22°C"
+        android:layout_below="@id/thermostat_seekbar"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp" />
+
+</RelativeLayout>
